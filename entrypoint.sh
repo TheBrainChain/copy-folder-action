@@ -14,9 +14,11 @@ git config --global user.name "$GITHUB_USERNAME"
 git clone "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$GITHUB_REPO.git" "$CLONE_DIR"
 
 cp -r "$SOURCE_FOLDER" "$CLONE_DIR"/"$OUTPUT_FOLDER"
-
+ls -la "$CLONE_DIR"/"$OUTPUT_FOLDER"
 cd "$CLONE_DIR"
 
 git add .
+git status
 git commit --message "Update from https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA)"
+git status
 git push origin master
