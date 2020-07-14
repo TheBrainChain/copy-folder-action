@@ -18,6 +18,7 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.source-directory }}
+    - ${{ inputs.output-directory }}
     - ${{ inputs.destination-github-username }}
     - ${{ inputs.destination-repository-name }}
     - ${{ inputs.user-email }}
