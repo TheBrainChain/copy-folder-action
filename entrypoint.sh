@@ -19,7 +19,7 @@ ls -la "$CLONE_DIR"
 # find "$CLONE_DIR" | grep -v "^$CLONE_DIR/\.git" | grep -v "^$CLONE_DIR$" | xargs rm -rf # delete all files (to handle deletions)
 
 ls -la "$CLONE_DIR"
-ls -la
+ls -la "$FOLDER"
 
 cp -r "$FOLDER" "$CLONE_DIR"
 
