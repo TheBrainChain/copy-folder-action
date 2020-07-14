@@ -21,7 +21,7 @@ ls -la "$CLONE_DIR"
 ls -la "$FOLDER"
 
 cp -r "$FOLDER" "$CLONE_DIR"
-ls -la "$CLONE_DIR"
+ls -la "$CLONE_DIR"/"$FOLDER"
 
 cd "$CLONE_DIR"
 
