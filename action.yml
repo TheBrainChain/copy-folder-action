@@ -4,6 +4,9 @@ inputs:
   source-directory:
     description: 'Source directory from the origin directory'
     required: true
+  output-directory:
+    description: 'Output directory in the destination directory'
+    required: true
   destination-github-username:
     description: 'Name of the destination username/organization'
     required: true
